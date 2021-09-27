@@ -3,9 +3,6 @@ on its parity. If the number is even, it is divided by two, otherwise if it is o
 and one is added. These steps are repeated until we are arrive at one."""
 
 
-# TODO add functionality to allow user to keep entering wrong numbers till they match the input criteria
-
-
 def collatz(number):
     """Repeatedly check if number is even, number/2, if number is odd, number * 3 + 1  until number == 1"""
     counter = 0
