@@ -24,9 +24,12 @@ def collatz(number):
 
 
 if __name__ == '__main__':
-    print("Enter a number: ")
-    try:
-        number = int(input())
-        collatz(number)
-    except ValueError:
-        print("You must enter an integer.")
+    while True:
+        print("Enter a number: ")
+        try:
+            number = int(input())
+            collatz(number)
+        except ValueError:
+            print("You must enter an integer.")
+        else:
+            break
