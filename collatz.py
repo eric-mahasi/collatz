@@ -27,4 +27,3 @@ def collatz():
 
 if __name__ == '__main__':
     collatz()
-
