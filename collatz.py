@@ -4,7 +4,13 @@ and one is added. These steps are repeated until we are arrive at one."""
 
 
 def collatz(number):
-    """Repeatedly check if number is even, number/2, if number is odd, number * 3 + 1  until number == 1"""
+    """Repeatedly check if number is even, number/2, if number is odd, number * 3 + 1  until number == 1
+
+        Parameters
+        ----------
+        number : int
+            an integer which is the starting point of the Collatz sequence.
+    """
     counter = 0
     while number != 1:
         if number <= 0:
