@@ -3,13 +3,11 @@ on its parity. If the number is even, it is divided by two, otherwise if it is o
 and one is added. These steps are repeated until we are arrive at one."""
 
 
-# TODO find out why number takes a float type, yet it is initially an int
 # TODO add functionality to allow user to keep entering wrong numbers till they match the input criteria
 
 
-def collatz():
+def collatz(number):
     """Repeatedly check if number is even, number/2, if number is odd, number * 3 + 1  until number == 1"""
-    number = int(input("Enter a number: "))
     counter = 0
     while number != 1:
         if number <= 0:
@@ -26,4 +24,9 @@ def collatz():
 
 
 if __name__ == '__main__':
-    collatz()
+    print("Enter a number: ")
+    try:
+        number = int(input())
+        collatz(number)
+    except ValueError:
+        print("You must enter an integer.")
