@@ -27,8 +27,8 @@ if __name__ == '__main__':
     while True:
         print("Enter a number: ")
         try:
-            number = int(input())
-            collatz(number)
+            n = int(input())
+            collatz(n)
         except ValueError:
             print("You must enter an integer.")
         else:
